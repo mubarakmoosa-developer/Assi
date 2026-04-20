@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;
+
+        }
+        .gallery-item {
+            background-color: aliceblue;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS white and red Flowers gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThkGRqndFRWCXqwtbweLskLNyt5hvbxAR-FA&s" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1183074816-649c5cb4c4d8e.jpg?crop=0.447xw:1.00xh;0.318xw,0" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/dahlias-flowers-with-white-petals-on-the-branches-royalty-free-image-1757518785.pjpeg?crop=0.668xw:1.00xh;0.185xw,0&resize=1120:*" alt="">
+            
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.pinimg.com/236x/af/2d/f1/af2df1df054b299e8da44a783f4cf729.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR59YL7Zo4VhTHniLBc7XzGZC0HNr3tG1SUFg&s  " alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/15848387-9508-4660-ac5b-18013e8532c3.jpeg?crop=0.888888888889xw:1xh;center,top&resize=1200:*" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJoupSYsnnY2a5K-PD2DfUTANt09roYurPpw&s" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.squarespace-cdn.com/content/v1/61f08de2c76c4c234b981cc8/d2ccc552-f157-4936-8fa5-895128cdf27e/samantha-fortney-vY_O_bdoc9o-unsplash.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
