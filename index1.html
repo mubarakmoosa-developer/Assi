@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;
+
+        }
+        .gallery-item {
+            background-color: aliceblue;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Nature Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ2vhLzIdtwpwXw90ZuWhngB-MdFsjD64CQ&s" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9PSg6yObKaXf3iS5D_--xBsONlxe7GP_XjA&s" alt="">
+            
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.mindful.org/content/uploads/What-Happens-When-We-Reconnect-with-Nature.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7UMOEKMIb5bxcksSFusblL1qGtmch5Th81g&s" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.nestle.com/sites/default/files/styles/da_vinci_header_hero_desktop/public/2024-02/sustainability-nature-hero-header.jpg.webp?itok=FA7yplve" alt="">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3dMc_oW2OWHnxFmLo8-g9Gm-CZWC6U9iyg&s" alt="">
+        </div>
+    </div>
+</body>
+</html>
